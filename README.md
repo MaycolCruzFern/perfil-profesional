@@ -15,3 +15,6 @@ Este proyecto puede servir como plantilla base para crear portafolios personales
 - HTML5
 - CSS3
 - JavaScript
+
+**🔗 Accede al perfil profesional en línea:**  
+[Ver perfil profesional en línea](https://maycolcruzfern.github.io/perfil-profesional/)
