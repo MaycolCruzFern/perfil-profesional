@@ -1,0 +1,246 @@
+/* --- Cabecera --- */
+/* Primer encabezado */
+.enc-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2%;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: white;
+    height: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    transition: var(--transition-tres);
+}
+
+.enc-datos-nombre{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.enc-datos-list{
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Barra de navegación */
+.nav{
+    background-color: white;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 35px;
+    transition: var(--transition-tres);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    width: auto;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-list a{
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-list a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition-cinco);
+}
+
+.nav-list a:hover{
+    color: var(--primary-color);
+    transition: var(--transition-cinco);
+}
+
+.nav-list a:hover::after{
+    width: 100%;
+}
+
+/* --- Footer --- */
+.footer-datos{
+    background-color: var(--dark-1);
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+}
+
+.datos-grupo h4{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.datos-lista{
+    font-size: 13.5px;
+}
+
+.footer-autoria{
+    background-color: var(--dark-2);
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13.5px;
+}
+
+/* --- Otros --- */
+/* Subrayado de subtítulo */
+.text-subtitle{
+    font-size: 40px;
+    margin-bottom: 32px;
+    position: relative;
+    color: var(--text-color-primary);
+}
+
+.text-subtitle::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100px;
+    background-color: var(--detail-color);
+}
+
+.text-subtitle::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 80px;
+    background-color: var(--detail-color);
+    margin-bottom: -8px;
+}
+
+.text-subtitle-center{
+    text-align: center;
+}
+
+.text-subtitle-center::before, .text-subtitle-center::after{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Botones */
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: var(--transition-cinco);
+}
+
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.text-negrita{
+    font-weight: 600;
+}
+
+/* --- Modal --- */
+.modal-generico{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido{
+    background-color: white;
+    border-radius: 5px;
+    width: 40%;
+    margin: 8% auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.modal-extendido{
+    width: 60%;
+}
+
+.modal-cerrar-x{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-cerrar-x:hover{
+    color: #aaa;
+}
+
+.modal-nav{
+    padding: 15px 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+.modal-body{
+    padding: 15px 20px;
+}
+
+.modal-footer{
+    padding: 15px 20px;
+    border-top: 1px solid #aaa;
+}
+
+.modal-nav h4{
+    font-size: 18px;
+    font-weight: 600;
+}

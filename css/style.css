@@ -1,0 +1,518 @@
+/* Contenido principal */
+main{
+    margin-top: 110px;
+}
+
+.contenido-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px 5%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://unires.unheval.edu.pe/public/imagenes/fondounh.webp') center/cover no-repeat;
+    margin-bottom: 40px;
+}
+
+.principal-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.principal-texto{
+    flex: 1;
+}
+
+.principal-texto h2{
+    font-size: 60px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.principal-texto h3{
+    color: white;
+}
+
+.principal-texto p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 600px;
+    color: white;
+}
+
+.principal-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.principal-redes a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 35px;
+    width: 35px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: var(--transition-cinco);
+}
+
+.principal-redes a:hover{
+    background-color: white;
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.enlaces-botones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.enlaces-secundarios{
+    display: none;
+}
+
+.principal-imagen{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.principal-imagen img{
+    height: 350px;
+    width: auto;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 0 25px rgba(89, 83, 209, 0.5);
+    transition: var(--transition-cinco);
+}
+
+.principal-imagen img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(89, 83, 209, 0.5);
+}
+
+/* Sobre mí */
+.about-me{
+    padding: 20px 5%;
+    color: var(--text-color-secondary);
+    margin-bottom: 40px;
+}
+
+.about-texto{
+    margin-bottom: 20px;
+}
+
+.about-texto h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-datos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;;
+    gap: 3%;
+}
+
+.about-datos p{
+    width: 30.33%;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Cabecera */
+.contenido-cabecera
+{
+    height: 20vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://unires.unheval.edu.pe/public/imagenes/fondounh.webp') center/cover no-repeat;
+    padding: 20px 10%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-cabecera h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contenido-cabecera p{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* Contenido Proyectos y Servicio */
+.contenido-proyectos{
+    padding: 20px 5%;
+    color: var(--text-color-secondary);
+}
+
+.proyectos-lista{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+.proyecto-item{
+    width: 315px;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 25px rgba(154, 153, 160, 0.5);
+    transition: var(--transition-cinco);
+}
+
+.proyecto-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(31, 31, 37, 0.5);
+}
+
+.proyecto-item img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.proyecto-detalles{
+    padding: 15px 20px;
+}
+
+.proyecto-detalles h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.proyecto-detalles p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.proyecto-tecnologias{
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.proyecto-tecnologias li{
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 2.5px 5px;
+    color: white;
+}
+
+.enlaces-proyectos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.enlaces-proyectos a{
+    font-weight: 400;
+    transition: var(--transition-cinco);
+}
+
+.enlaces-proyectos a:hover{
+    color: var(--secondary-color);
+}
+
+/* Contenido de Blog */
+.contenido-blog{
+    padding: 20px 5%;
+    color: var(--text-color-secondary);
+}
+
+.blog-contenido{
+    padding: 10px 20%;
+}
+
+.blog-link{
+    padding: 8px 8px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--detail-color);
+}
+
+.blog-link:hover{
+    background-color: white;
+}
+
+.item-left{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-left img{
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 3px;
+    box-shadow: 0 0 10px rgba(154, 153, 160, 0.5);
+}
+
+.item-left h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.item-right{
+    font-size: 14px;
+}
+
+/* --- Formulario --- */
+.contenedor-form{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 2%;
+}
+
+.contenedor-input{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 46%;
+    margin-bottom: 10px;
+}
+
+.contenedor-input label, .contenedor-input textarea{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.contenedor-input label{
+    font-weight: 400;
+}
+
+.contenedor-input input, .contenedor-input textarea{
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.contenedor-input textarea{
+    max-width: 100%;
+}
+
+.contenedor-input input:focus, .contenedor-input textarea:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.btn-enviar{
+    cursor: pointer;
+}
+
+/* Currículum */
+.contenedor-cv{
+    font-size: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+
+.grupo-titulo{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cv-item{
+    padding-bottom: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30px;
+    position: relative;
+}
+
+.cv-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -18px;
+    width: 3px;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.cv-item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -26px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.cv-item span{
+    color: #514e4e;
+    margin-bottom: 5px;
+}
+
+.cv-item h4{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.cv-item h5{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Media queries */
+
+@media (max-width: 1400px){
+    .modal-contenido{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px){
+    .about-datos{
+        gap: 3%;
+    }
+
+    .about-datos p{
+        width: 47%;
+    }
+}
+
+@media (max-width: 850px){
+    
+    .principal-datos{
+        flex-direction: column;
+    }
+
+    .principal-texto h2, .principal-texto h3, .principal-texto p{
+        text-align: center;
+    }
+
+    .principal-redes{
+        justify-content: center;
+    }
+
+    .nav-list{
+        gap: 30px;
+    }
+
+    .enlaces-principales{
+        display: none;
+    }
+
+    .enlaces-secundarios{
+        display: flex;
+    }
+
+    .principal-imagen img{
+        height: 350px;
+    }
+
+    .about-datos p{
+        width: 100%;
+    }
+
+    .blog-link{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .modal-contenido{
+        width: 90%;
+    }
+
+    .contenedor-cv{
+        flex-flow: column nowrap;
+    }
+}
+
+@media (max-width: 768px){
+    .enc-datos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enc-datos h1{
+        margin-bottom: 10px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+
+    .footer-datos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .datos-grupo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .datos-grupo h4{
+        margin-bottom: 5px;
+    }
+
+    .footer-autoria p{
+        text-align: center;
+    }
+
+    .modal-contenido{
+        width: 90%;
+    }
+
+    .contenedor-form{
+        flex-direction: column;
+    }
+
+    .contenedor-input{
+        width: 100%;
+    }
+}
